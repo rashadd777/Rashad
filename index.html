@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank A</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__body">
+        <div class="header__logo">
+          <img src="logo.svg" class="header__logo--img" alt="logo" >
+        </div>
+        <ul class="header__menu--list menu-list">
+          <li class="menu-list__item">
+            <p class="menu-list__item--link">Банк</p>
+          </li>
+          <li class="menu-list__item">
+            <p class="menu-list__item--link">Бизнес</a>
+          </li>
+          <li class="menu-list__item">
+            <p class="menu-list__item--link">Инвестиции</p>
+          </li>
+          <li class="menu-list__item">
+            <p class="menu-list__item--link">Страховние</p>
+          </li>
+          <li class="menu-list__item">
+            <p class="menu-list__item--link">Мобил</p>
+          </li>
+          <li class="menu-list__item">
+            <p  class="menu-list__item--link">Путеществия</p>
+          </li>
+          <li class="menu-list__item">
+            <p class="menu-list__item--link">Развлечения</p>
+          </li>
+        </ul>
+        <div class="header__login">
+          <p class="header__login--btn">Войти</p></div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="converter">
+        <h1 class="converter__title">Конвертер валют онлайн</h1>
+        <div class="converter__body">
+          <div class="converter__body--item item item-left">
+            <span class="item__title">У меня есть</span>
+            <div class="item__switcher">
+              <div class="item__switcher--box switcher-box-1  box-active">RUB</div>
+              <div class="item__switcher--box switcher-box-1">USD</div>
+              <div class="item__switcher--box switcher-box-1">EUR</div>
+              <div class="item__switcher--box switcher-box-1">GBP</div>
+              <div class="item__switcher--box switcher-box-1">BYR</div>
+            </div>
+            <div class="item__input--box">
+              <input type="number" class="item__input--input input1" value="1">
+              <span class="item__input--rate rate-1"> 1 RUB = 0.0135 USD</span>
+            </div>
+          </div>
+          <div style="display: none;" class="converter__body--item center">
+            <img src="arrow-centersvg.svg" class="center-arrow" alt="ARROW_CENTER">
+          </div>
+          <div style="margin-left:50px;" class="converter__body--item item item-right">
+            <span class="item__title">Хочу приобрести</span>
+            <div class="item__switcher">
+              <div class="item__switcher--box2 switcher-box-2">RUB</div>
+              <div class="item__switcher--box2 switcher-box-2  box-active">USD</div>
+              <div class="item__switcher--box2 switcher-box-2">EUR</div>
+              <div class="item__switcher--box2 switcher-box-2">GBP</div>
+              <div class="item__switcher--box2 switcher-box-2">BYR</div>
+            </div>
+            <div class="item__input--box">
+              <input type="number" class="item__input--input input2" value="">
+              <span class="item__input--rate rate-2"> 1 RUB = 0.0135 USD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main> 
+</body>
+<script src="main.js"></script>
+</html>

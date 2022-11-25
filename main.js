@@ -1,9 +1,13 @@
+
 let currencyFrom = 'RUB';
 let currencyTo = 'USD';
 let valut = document.querySelector('.rate-1');
 let valuta = document.querySelector('.rate-2');
 let linput = document.querySelector('input.input1');
 let rinput = document.querySelector('input.input2');
+
+
+
 //значения валюты
 fetch(`https://api.exchangerate.host/latest?base=${currencyTo}&symbols=${currencyFrom}`)
   .then(res => res.json())
@@ -100,3 +104,19 @@ boxswt2.forEach(function (elem) {
     elem.classList.add('box-active');
   });
 });
+
+// nuli sotki tocki 
+/*const mask1a = new IMask(linput, {
+  mask: Number, 
+  scale: 4,
+  thousandsSeparator:' ',
+  radix: '.',  
+});
+
+const maska2 = new IMask(rinput, {
+  mask: Number, 
+  scale: 4,  
+  thousandsSeparator:' ',  
+  radix: '.',  
+});
+*/
